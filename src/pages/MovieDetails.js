@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router"
+import { BaseURL } from "../config/BaseURL";
 
 export const MovieDetails=()=>{
 
@@ -9,7 +10,7 @@ export const MovieDetails=()=>{
     const [movie,setMovie]=useState([])
 
     useEffect(async()=>{
-        await axios.get('https://yts.mx/api/v2/movie_details.json?movie_id='+id).then(res=>{
+        await axios.get(BaseURL+'movie_details.json?movie_id='+id).then(res=>{
             console.log(res.data.data)
             setMovie(res.data.data.movie)
         })
