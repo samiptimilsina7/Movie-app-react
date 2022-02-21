@@ -10,10 +10,10 @@ export const Nav=()=>{
                     <NavLink to={'/'}>Home</NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={'/about'}>About</NavLink>
+                    <NavLink to={'/movie/:id'}>Movie Details</NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={'/services'}>Services</NavLink>
+                    <NavLink to={'/search/:keyword'}>Search</NavLink>
                 </div>
             </div>
 

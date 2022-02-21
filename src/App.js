@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Landing } from './pages/Landing';
 import { AppRoutes } from "./routes/AppRoutes";
+import { MainLayout } from './layouts/MainLayout';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>} />
       </Routes> */}
-      <AppRoutes/>
+      <MainLayout/>
     </div>
   );
 }
