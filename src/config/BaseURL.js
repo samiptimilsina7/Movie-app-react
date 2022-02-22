@@ -1,1 +1,1 @@
-export const BaseURL='https://yts.mx/api/v2/'
+export const BaseURL='https://yts.mx/api/v2/' //baseURL is seperated because to avoid searching and changing every URL line by line if the url changes, a change in the URL can simply be tracked by changing this baseURL so every value of it in other codes changes itself

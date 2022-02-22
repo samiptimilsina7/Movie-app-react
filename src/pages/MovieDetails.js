@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router"
 import { BaseURL } from "../config/BaseURL";
+// import { MovieSuggestions } from "../components/common/MovieSuggestions";
 
 export const MovieDetails=()=>{
 
@@ -21,6 +22,7 @@ export const MovieDetails=()=>{
             <img src={movie.background_image} alt="" height={300}/>
             <h1>{movie.title}</h1>
             <p>{movie.description_full}</p>
+            <h1>Rating: {movie.rating}</h1>
         </section>
         
         // <div>This is the details page {id}</div>
